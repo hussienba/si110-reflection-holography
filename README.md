@@ -1,4 +1,4 @@
-# Plane-wave multislice simulation in reflection geometry using Prismatic (via the Prismatique Python wrapper), with off-axis electron-holographic reconstruction pipeline.
+# HRTEM multislice simulation in reflection geometry using Prismatique, with off-axis electron-holographic reconstruction.
 
 Reflection electron holography forward-simulation and reconstruction pipeline for the cleaved-Si[110] (1,1,-1) facet geometry, replicating the off-axis holographic step-phase measurement using diamond-cubic silicon.
 
