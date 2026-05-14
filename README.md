@@ -3,7 +3,7 @@
 Reflection electron holography forward-simulation and reconstruction pipeline for the cleaved-Si[110] (1,1,-1) facet geometry, replicating the off-axis holographic step-phase measurement using diamond-cubic silicon.
 
 ---
-## 2. Pipeline architecture
+## 1. Pipeline architecture
 
 ```
   ┌──────────────────────────────────────────────┐
@@ -47,7 +47,7 @@ postprocessing>
   pipeline/process_all_tilts.py        — batch driver over a tilt-series dir
   pipeline/hdf5_output_validator.py    — minimal HDF5 layout probe, for checking the structure of data. 
 ```
-## 4. Dependencies
+## 2. Dependencies
 
 | Package | Version | Role |
 |---|---|---|
@@ -62,7 +62,7 @@ postprocessing>
 
 The underlying Prismatic multislice/PRISM engine (C++/CUDA, distributed separately) is wrapped by `prismatique`. 
 
-## 7. Citations
+## 3. Citations
 
 2. **Rangel DaCosta, L., Brown, H. G., Pelz, P. M., Rakowski, A., Barber, N., O'Donovan, P., McBean, P., Jones, L., Ciston, J., Scott, M. C., Ophus, C.**, "Prismatic 2.0 – Simulation software for scanning and high resolution transmission electron microscopy (STEM and HRTEM)", *Micron*, **151** (2021) 103141. doi: `10.1016/j.micron.2021.103141`. — Multislice/PRISM engine wrapped by `prismatique`.
 3. https://github.com/mrfitzpa/prismatique 
@@ -71,11 +71,11 @@ The underlying Prismatic multislice/PRISM engine (C++/CUDA, distributed separate
 6. **Peng, L.-M., Whelan, M. J., Dudarev, S. L.**, *High-Energy Electron Diffraction and Microscopy*, Monographs on the Physics and Chemistry of Materials, Oxford University Press (ISBN 9780191001628). — Reference text for dynamical diffraction in transmission and reflection geometries; 
 7. **Tomita, T., Shindo, D.**, *Material Characterization Using Electron Holography*, Wiley-VCH, 2022. — Modern reference for off-axis electron holography reconstruction (sideband filtering, phase unwrapping, ramp removal) implemented in `specular_filter.py`.
 
-## 8. Acknowledgments
+## 4. Acknowledgments
 
 - **Prismatique** (Python wrapper) is the package this pipeline imports as `prismatique`; `embeam` provides the matched gun/lens model objects. Used here in version 0.0.1. https://github.com/mrfitzpa/prismatique - Author: Matthew Fitzpatrick
 
-## 9. License
+## 5. License
 
 MIT License.  See `LICENSE`.
 
