@@ -1,0 +1,48 @@
+{
+    "_comment": "Example meta.json configurations for multi-angle beam tilting",
+    "example_1_step_based": {
+        "material": "Silicon",
+        "structure": "Diamond Cubic (100)",
+        "a_A": 5.431,
+        "energy_keV": 200.0,
+        "advisory_pixel_size_A": 0.13,
+        "alpha_deg": 1.375,
+        "tilt_start_mrad": 0.0,
+        "tilt_end_mrad": 24.0,
+        "tilt_step_mrad": 6.0,
+        "_tilt_result": "Generates angles: [0.0, 6.0, 12.0, 18.0, 24.0] mrad"
+    },
+    "example_2_explicit_array": {
+        "material": "Silicon",
+        "structure": "Diamond Cubic (100)",
+        "a_A": 5.431,
+        "energy_keV": 200.0,
+        "advisory_pixel_size_A": 0.13,
+        "alpha_deg": 1.375,
+        "tilt_angles_mrad": [
+            0.0,
+            12.0,
+            23.997
+        ],
+        "_tilt_result": "Uses exact angles: [0.0, 12.0, 23.997] mrad"
+    },
+    "example_3_single_angle": {
+        "material": "Silicon",
+        "structure": "Diamond Cubic (100)",
+        "a_A": 5.431,
+        "energy_keV": 200.0,
+        "advisory_pixel_size_A": 0.13,
+        "alpha_deg": 1.375,
+        "tilt_angles_mrad": 23.997,
+        "_tilt_result": "Single angle: [23.997] mrad (for 666 Bragg condition)"
+    },
+    "example_4_backward_compatible": {
+        "material": "Silicon",
+        "structure": "Diamond Cubic (100)",
+        "a_A": 5.431,
+        "energy_keV": 200.0,
+        "advisory_pixel_size_A": 0.13,
+        "alpha_deg": 1.375,
+        "_tilt_result": "No tilt specified → defaults to [0.0] mrad (on-axis)"
+    }
+}

@@ -1,0 +1,118 @@
+cff-version: 1.2.0
+message: "If you use this software in academic work, please cite it as below."
+type: software
+title: "si110-reflection-holography: Reflection electron holography simulation for cleaved-Si surface topography"
+version: "0.1.0"
+date-released: "2026-05-14"
+license: MIT
+repository-code: "https://github.com/hussienba/si110-reflection-holography"
+abstract: >
+  Forward multislice simulation and off-axis sideband-filter reconstruction
+  pipeline for reflection electron holography on cleaved Si[110] (1,1,-1)
+  facets. Replicates the Osakabe et al. (1993) step-phase geometry on a
+  diamond-cubic crystal where the symmetric (666) Bragg condition is
+  structure-factor forbidden; retargets to the asymmetric Si(2,-2,0)
+  reflection at 200 keV. Stage 1 of a PhD program on extending electron
+  ptychography to reflection geometry.
+keywords:
+  - electron holography
+  - reflection electron microscopy
+  - multislice simulation
+  - silicon surface topography
+  - electron ptychography
+  - off-axis holography
+  - HRTEM
+  - condensed matter physics
+authors:
+  - family-names: Ballouk
+    given-names: Hussien
+    affiliation: "Department of Physics and Astronomy, University of Victoria"
+    orcid: ""
+  - family-names: Blackburn
+    given-names: Arthur
+    affiliation: "Centre for Advanced Materials and Related Technologies (CAMTEC), University of Victoria"
+    orcid: ""
+preferred-citation:
+  type: software
+  title: "si110-reflection-holography (v0.1.0)"
+  year: 2026
+  authors:
+    - family-names: Ballouk
+      given-names: Hussien
+    - family-names: Blackburn
+      given-names: Arthur
+  repository-code: "https://github.com/hussienba/si110-reflection-holography"
+references:
+  - type: article
+    authors:
+      - family-names: Osakabe
+        given-names: N.
+      - family-names: Endo
+        given-names: J.
+      - family-names: Tonomura
+        given-names: A.
+    title: "Observation of atomic steps by reflection electron holography"
+    journal: "Surface Science"
+    year: 1993
+    notes: "PII 0039-6028(93)90047-N"
+  - type: article
+    authors:
+      - family-names: "Rangel DaCosta"
+        given-names: L.
+      - family-names: Brown
+        given-names: H. G.
+      - family-names: Pelz
+        given-names: P. M.
+      - family-names: Rakowski
+        given-names: A.
+      - family-names: Barber
+        given-names: N.
+      - family-names: "O'Donovan"
+        given-names: P.
+      - family-names: McBean
+        given-names: P.
+      - family-names: Jones
+        given-names: L.
+      - family-names: Ciston
+        given-names: J.
+      - family-names: Scott
+        given-names: M. C.
+      - family-names: Ophus
+        given-names: C.
+    title: "Prismatic 2.0 – Simulation software for scanning and high resolution transmission electron microscopy (STEM and HRTEM)"
+    journal: Micron
+    volume: 151
+    start: 103141
+    year: 2021
+    doi: "10.1016/j.micron.2021.103141"
+  - type: book
+    authors:
+      - family-names: Kirkland
+        given-names: "E. J."
+    title: "Advanced Computing in Electron Microscopy"
+    edition: "3rd"
+    publisher:
+      name: "Springer"
+    year: 2020
+  - type: book
+    authors:
+      - family-names: Peng
+        given-names: "L.-M."
+      - family-names: Whelan
+        given-names: "M. J."
+      - family-names: Dudarev
+        given-names: "S. L."
+    title: "High-Energy Electron Diffraction and Microscopy"
+    publisher:
+      name: "Oxford University Press"
+    isbn: "9780191001628"
+  - type: book
+    authors:
+      - family-names: Tomita
+        given-names: T.
+      - family-names: Shindo
+        given-names: D.
+    title: "Material Characterization Using Electron Holography"
+    publisher:
+      name: "Wiley-VCH"
+    year: 2022

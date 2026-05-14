@@ -1,0 +1,21 @@
+# si110-reflection-holography — runtime dependencies
+#
+# Core numerics / I/O — loose lower bounds; recent versions are fine.
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+h5py>=3.8
+ase>=3.22
+
+# Multislice engine wrapper. The current pipeline code targets the 0.0.1
+# release exactly; later versions of prismatique have been seen to change
+# the prismatique.hrtem.* parameter schema. If you upgrade, audit
+# pipeline/multislice_forward_model.py for the ModelParams/Output keywords
+# that are passed in.
+prismatique==0.0.1
+embeam
+
+# Optional GPU acceleration. Install the cupy build matching your CUDA
+# toolkit (e.g. cupy-cuda12x). The forward-model scripts auto-detect a
+# usable cupy import and fall back to CPU silently if it is absent.
+# cupy-cuda12x
